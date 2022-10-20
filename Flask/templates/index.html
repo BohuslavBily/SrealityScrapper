@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <META charset="UTF-8"/>
+        <meta main="viewport" content="width=devide-width, initial-scale=1" />
+        <link rel="stylesheet" href="../static/styles.css">
+        <title>Home</title>
+    </head>
+
+    <body>
+        {% for row in table %}
+            {{ row.title }}  
+            <div>{{ row.loc }}</div>
+            <img src="{{ row.img_url }}" alt="Italian Trulli">
+    {% endfor %}
+    </body>
+</html>
